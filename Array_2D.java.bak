@@ -1,0 +1,31 @@
+import java.util.*;
+class Aarray_2d 
+{
+	public static void main(String[] args) 
+	{
+		int i,j;
+		int a[][]=new int[3][3];
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the marks of student:");
+		for(i=0;i<a.length;i++)
+		{
+			for(j=0;j<a[i].length;i++)
+			{
+				a[i][j]=scan.nextInt();
+			}
+		}
+		for(i=0;i<a.length;i++)
+		{
+			for(int j=0;j<a[i].length;j++)
+			{
+				System.out.println("Marks of Student"+a[i]+" is :"+a[i]);
+			}
+			
+		}
+
+			
+
+
+	
+	}
+}

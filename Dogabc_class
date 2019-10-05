@@ -1,0 +1,7 @@
+class Dog
+{
+	String name;
+	String color;
+	int cost;
+	string breed;
+	

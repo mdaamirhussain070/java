@@ -1,0 +1,25 @@
+import java.util.*;
+class Pattern_1
+{
+
+	public static void main(String[] args) 
+	{
+		int n,m,i,j;
+		Scanner scan=new Scanner(System.in);
+
+		System.out.println("Enter number of row and column");
+		n=scan.nextInt();
+		m=scan.nextInt();
+
+
+		for(i=0;i<m;i++)
+		{
+			for(j=0;j<n;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+	}
+}
