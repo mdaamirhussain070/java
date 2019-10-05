@@ -1,0 +1,66 @@
+abstract class Animal
+{
+	abstract void eat();
+	abstract void sleep();
+	void breath()
+	{
+		System.out.println("Animal Breaths");
+	}
+}
+class Tiger extends Animal
+{
+	void eat()
+	{
+		System.out.println("Tiger eats");
+	}
+	void sleep()
+	{
+		System.out.println("Tiger Sleeps ");
+	}
+}
+class Monkey extends Animal
+{
+	void eat()
+	{
+		System.out.println("Monkey eats");
+	}
+	void sleep()
+	{
+		System.out.println("Monkey sleeps");
+	}
+}
+class Pig extends Animal
+{
+	void eat()
+	{
+		System.out.println("Pig eats");
+	}
+	void sleep()
+	{
+		System.out.println("Pig sleeps");
+	}
+}
+class Forest
+{
+	void animalActivity(Animal a)
+	{
+		a.eat();
+		a.sleep();
+		a.breath();
+	}
+}
+class LaunchAnimal 
+{
+	public static void main(String[] args) 
+	{
+		Tiger t=new Tiger();
+		Monkey m=new Monkey();
+		Pig p=new Pig();
+		Forest f=new Forest();
+
+		f.animalActivity(t);
+		f.animalActivity(m);
+		f.animalActivity(p);
+		System.out.println();
+	}
+}
